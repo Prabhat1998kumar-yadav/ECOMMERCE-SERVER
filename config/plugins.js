@@ -14,5 +14,10 @@ module.exports = ({ env }) => ({
         },
       },
     },
+    'users-permissions': {
+      config: {
+        jwtSecret: env('JWT_SECRET'), // Add this line to include JWT secret
+      },
+    },
    
   });
